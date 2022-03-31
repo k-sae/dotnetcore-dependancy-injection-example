@@ -1,7 +1,9 @@
-namespace DependencyInjectionDemoApi.Domain.Exam;
-
-public interface IExam : IActivity
+namespace DependencyInjectionDemoApi.Domain.Exam
 {
-    public string ExamName {get; set;}
 
+    public interface IExam : IActivity
+    {
+        public string ExamName { get; set; }
+
+    }
 }

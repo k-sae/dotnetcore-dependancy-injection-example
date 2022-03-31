@@ -1,20 +1,22 @@
-namespace DependencyInjectionDemoApi.Domain.Exam;
-
-public class Exam : IExam
+namespace DependencyInjectionDemoApi.Domain.Exam
 {
-    public string ExamName
+
+    public class Exam : IExam
     {
-        get => "my Exam";
-        set { }
+        public string ExamName
+        {
+            get => "my Exam";
+            set { }
+        }
+
+
+        public int ExamDuration { get; private set; }
+
+        public int CalculateActivityDuration()
+        {
+            ExamDuration = 60;
+            return 60;
+        }
     }
 
-
-    public int ExamDuration { get; private set; }
-
-    public int CalculateActivityDuration()
-    {
-        ExamDuration = 60;
-        return 60;
-    }
 }
-

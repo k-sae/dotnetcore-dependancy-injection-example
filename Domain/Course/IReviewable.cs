@@ -1,6 +1,8 @@
-namespace DependencyInjectionDemoApi.Domain.Course;
-
-public interface IReviewable
+namespace DependencyInjectionDemoApi.Domain.Course
 {
-    public int CalculateReviewCount();
+
+    public interface IReviewable
+    {
+        public int CalculateReviewCount();
+    }
 }

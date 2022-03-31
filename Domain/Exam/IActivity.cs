@@ -1,7 +1,9 @@
-namespace DependencyInjectionDemoApi.Domain.Exam;
-
-public interface IActivity
+namespace DependencyInjectionDemoApi.Domain.Exam
 {
-    public int ExamDuration {get;}
-    public int CalculateActivityDuration();
+
+    public interface IActivity
+    {
+        public int ExamDuration { get; }
+        public int CalculateActivityDuration();
+    }
 }
